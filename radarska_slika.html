@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeko d.o.o.</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="menu-icon"><img src="./images/menu-icon2.svg" alt="" /></div>
+    <div id="nav" class="navigation">
+      <img src="./images/close-icon.svg" class="close-icon" id="close-btn" />
+      <a href="./index.html">Kamere</a>
+      <a href="./vremenska_napoved.html">Vremenske napovedi</a>
+      <a href="./radarska_slika.html"
+        ><span class="active">Radarska slika</span></a
+      >
+      <a href="#">Uporabne aplikacije</a>
+    </div>
+    <div class="section">
+      <img src="./images/radarska.jpg" class="weather-bg" />
+      <div class="section-text"><h1>radarska slika</h1></div>
+    </div>
+    <div class="container" id="vremenske-napovedi">
+      <iframe
+        src="https://embed.windy.com/embed2.html?lat=46.404&lon=13.964&detailLat=45.995&detailLon=14.062&width=650&height=450&zoom=8&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=m%2Fs&metricTemp=%C2%B0C&radarRange=-1"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
