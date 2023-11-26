@@ -50,6 +50,7 @@
     overflow: hidden;
     transition: .5s;
     background: black;
+    gap: 2px;
   }
   
   .grid-item {
@@ -67,6 +68,7 @@
     color: #fff;
     text-transform: uppercase;
     padding: 4px;
+    border-bottom: 2px solid var(--purple-darker)
   }
   
   .grid-container img {
