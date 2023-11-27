@@ -117,6 +117,10 @@
     font-weight: bold;
     transition: .2s;
   }
+
+#radarska-slika {
+  height: 90vh;
+}
   
   .section {
     position: relative;
