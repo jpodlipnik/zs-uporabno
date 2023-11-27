@@ -117,11 +117,7 @@
     font-weight: bold;
     transition: .2s;
   }
-
-#radarska-slika {
-  height: 90vh;
-}
-  
+ 
   .section {
     position: relative;
     height: 200px;
@@ -155,6 +151,10 @@
     min-height: 300px;
     max-height: 100%;
   }
+
+#radarska-slika {
+  height: 90vh;
+}
 
   /*Navigacija*/
   .navigation {
