@@ -35,7 +35,7 @@ function refreshImages() {
 refreshImages();
 
 // Set up the interval to refresh images every 5 minutes
-setInterval(refreshImages, 5* 10 * 1000); // 5 minutes in milliseconds
+setInterval(refreshImages, 15* 10 * 1000); // 5 minutes in milliseconds
 
 function updateTimestamp() {
   const timestampElement = document.getElementById('refresh-date');
@@ -51,4 +51,4 @@ function updateTimestamp() {
 }
 
 updateTimestamp();
-setInterval(updateTimestamp, 5 * 60 * 1000);
+setInterval(updateTimestamp, 15 * 60 * 1000);
