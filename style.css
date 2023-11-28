@@ -126,6 +126,19 @@
     background-color: black;
   }
 
+  #date {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 25px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
   .weather-bg {
     position: absolute;
     left: 0;
