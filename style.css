@@ -310,4 +310,9 @@
       top: 70px;
     }
 
+    #date {
+      padding: 5px;
+      font-size: 12px;
+    }
+
   }
