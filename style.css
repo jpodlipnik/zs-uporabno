@@ -11,7 +11,7 @@
     box-sizing: border-box;
   }
 
-  body {
+  body,html {
     background-color: rgb(214, 214, 214);
   }
 
@@ -42,8 +42,9 @@
   
   /* Apply styles to the grid container to fill the entire viewport */
   .grid-container {
+    flex: 1;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
     grid-template-rows: repeat(3, 1fr); /* 3 rows taking full height */
     height: 100%; /* Fill the entire viewport height */
     max-height: 100vh;
@@ -95,11 +96,17 @@
 
   .black-bg {
     background-color: black;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .active {
     font-weight: bold;
     color:var(--rose);
   }
+
+
 
   #vremenske-napovedi li {
     list-style-type:decimal
@@ -112,10 +119,12 @@
   }
   
   #vremenske-napovedi a:hover{
-    border-bottom:2px solid var(--purple-darker);
+    border-bottom:1px solid var(--purple-darker);
     color: var(--rose);
-    font-weight: bold;
-    transition: .2s;
+  }
+
+  #vremenske-napovedi li:hover {
+    color: var(--rose);
   }
  
   .section {
@@ -193,19 +202,13 @@
     color: var(--purple-darker);
     text-align: center;
     padding: 20px;
-    display: block;
     width: 100%;
   }
 
   .navigation a:hover {
     background-color: var(--rose);
-    color: #fff;
+    color: #fff !important;
     transition: .3s;
-  }
-
-  .navigation span:hover {
-    color: #fff;
-    font-weight: normal;
   }
 
   #menu-icon {
@@ -247,8 +250,13 @@
   }
 
   .opacity {
-    opacity: 0.2;
+    opacity: 0.5;
     transition: 0.5s;
+  }
+
+  .blur {
+    filter: blur(5px);
+    transition: .5s;
   }
 
   
